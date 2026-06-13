@@ -5032,10 +5032,308 @@
 		}
 	},
 
-	"Turkey": {
-		"Turkey Tax": {
-			"account_name": "VAT 18%",
-			"tax_rate": 18.00
+	"Türkiye": {
+		"tax_categories": [
+			{
+				"title": "Yurt İçi Satış"
+			},
+			{
+				"title": "Yurt İçi Alış"
+			}
+		],
+		"chart_of_accounts": {
+			"Türkiye - Chart of Accounts": {
+				"sales_tax_templates": [
+					{
+						"title": "Hesaplanan KDV (Ürün Vergisine Göre)",
+						"is_default": 1,
+						"tax_category": "Yurt İçi Satış",
+						"taxes": [
+							{
+								"account_head": {
+									"account_name": "% 20 HESAPLANAN KDV",
+									"account_number": "391.01.20",
+									"root_type": "Liability",
+									"tax_rate": 20.0
+								},
+								"description": "Hesaplanan KDV %20",
+								"rate": 0
+							},
+							{
+								"account_head": {
+									"account_name": "% 10 HESAPLANAN KDV",
+									"account_number": "391.01.10",
+									"root_type": "Liability",
+									"tax_rate": 10.0
+								},
+								"description": "Hesaplanan KDV %10",
+								"rate": 0
+							},
+							{
+								"account_head": {
+									"account_name": "% 1 HESAPLANAN KDV",
+									"account_number": "391.01.01",
+									"root_type": "Liability",
+									"tax_rate": 1.0
+								},
+								"description": "Hesaplanan KDV %1",
+								"rate": 0
+							}
+						]
+					}
+				],
+				"purchase_tax_templates": [
+					{
+						"title": "İndirilecek KDV (Ürün Vergisine Göre)",
+						"is_default": 1,
+						"tax_category": "Yurt İçi Alış",
+						"taxes": [
+							{
+								"account_head": {
+									"account_name": "% 20'LİK İNDİRİLECEK KDV",
+									"account_number": "191.01.20",
+									"root_type": "Asset",
+									"tax_rate": 20.0
+								},
+								"description": "İndirilecek KDV %20",
+								"rate": 0
+							},
+							{
+								"account_head": {
+									"account_name": "% 10'LİK İNDİRİLECEK KDV",
+									"account_number": "191.01.10",
+									"root_type": "Asset",
+									"tax_rate": 10.0
+								},
+								"description": "İndirilecek KDV %10",
+								"rate": 0
+							},
+							{
+								"account_head": {
+									"account_name": "% 1'LİK İNDİRİLECEK KDV",
+									"account_number": "191.01.01",
+									"root_type": "Asset",
+									"tax_rate": 1.0
+								},
+								"description": "İndirilecek KDV %1",
+								"rate": 0
+							}
+						]
+					}
+				],
+				"item_tax_templates": [
+					{
+						"title": "KDV Satış %20",
+						"taxes": [
+							{
+								"tax_type": {
+									"account_name": "% 20 HESAPLANAN KDV",
+									"account_number": "391.01.20",
+									"root_type": "Liability",
+									"tax_rate": 20.0
+								},
+								"description": "KDV %20",
+								"tax_rate": 20
+							},
+							{
+								"tax_type": {
+									"account_name": "% 10 HESAPLANAN KDV",
+									"account_number": "391.01.10",
+									"root_type": "Liability",
+									"tax_rate": 10.0
+								},
+								"description": "KDV %10",
+								"not_applicable": 1
+							},
+							{
+								"tax_type": {
+									"account_name": "% 1 HESAPLANAN KDV",
+									"account_number": "391.01.01",
+									"root_type": "Liability",
+									"tax_rate": 1.0
+								},
+								"description": "KDV %1",
+								"not_applicable": 1
+							}
+						]
+					},
+					{
+						"title": "KDV Satış %10",
+						"taxes": [
+							{
+								"tax_type": {
+									"account_name": "% 20 HESAPLANAN KDV",
+									"account_number": "391.01.20",
+									"root_type": "Liability",
+									"tax_rate": 20.0
+								},
+								"description": "KDV %20",
+								"not_applicable": 1
+							},
+							{
+								"tax_type": {
+									"account_name": "% 10 HESAPLANAN KDV",
+									"account_number": "391.01.10",
+									"root_type": "Liability",
+									"tax_rate": 10.0
+								},
+								"description": "KDV %10",
+								"tax_rate": 10
+							},
+							{
+								"tax_type": {
+									"account_name": "% 1 HESAPLANAN KDV",
+									"account_number": "391.01.01",
+									"root_type": "Liability",
+									"tax_rate": 1.0
+								},
+								"description": "KDV %1",
+								"not_applicable": 1
+							}
+						]
+					},
+					{
+						"title": "KDV Satış %1",
+						"taxes": [
+							{
+								"tax_type": {
+									"account_name": "% 20 HESAPLANAN KDV",
+									"account_number": "391.01.20",
+									"root_type": "Liability",
+									"tax_rate": 20.0
+								},
+								"description": "KDV %20",
+								"not_applicable": 1
+							},
+							{
+								"tax_type": {
+									"account_name": "% 10 HESAPLANAN KDV",
+									"account_number": "391.01.10",
+									"root_type": "Liability",
+									"tax_rate": 10.0
+								},
+								"description": "KDV %10",
+								"not_applicable": 1
+							},
+							{
+								"tax_type": {
+									"account_name": "% 1 HESAPLANAN KDV",
+									"account_number": "391.01.01",
+									"root_type": "Liability",
+									"tax_rate": 1.0
+								},
+								"description": "KDV %1",
+								"tax_rate": 1
+							}
+						]
+					},
+					{
+						"title": "KDV Alış %20",
+						"taxes": [
+							{
+								"tax_type": {
+									"account_name": "% 20'LİK İNDİRİLECEK KDV",
+									"account_number": "191.01.20",
+									"root_type": "Asset",
+									"tax_rate": 20.0
+								},
+								"description": "KDV %20",
+								"tax_rate": 20
+							},
+							{
+								"tax_type": {
+									"account_name": "% 10'LİK İNDİRİLECEK KDV",
+									"account_number": "191.01.10",
+									"root_type": "Asset",
+									"tax_rate": 10.0
+								},
+								"description": "KDV %10",
+								"not_applicable": 1
+							},
+							{
+								"tax_type": {
+									"account_name": "% 1'LİK İNDİRİLECEK KDV",
+									"account_number": "191.01.01",
+									"root_type": "Asset",
+									"tax_rate": 1.0
+								},
+								"description": "KDV %1",
+								"not_applicable": 1
+							}
+						]
+					},
+					{
+						"title": "KDV Alış %10",
+						"taxes": [
+							{
+								"tax_type": {
+									"account_name": "% 20'LİK İNDİRİLECEK KDV",
+									"account_number": "191.01.20",
+									"root_type": "Asset",
+									"tax_rate": 20.0
+								},
+								"description": "KDV %20",
+								"not_applicable": 1
+							},
+							{
+								"tax_type": {
+									"account_name": "% 10'LİK İNDİRİLECEK KDV",
+									"account_number": "191.01.10",
+									"root_type": "Asset",
+									"tax_rate": 10.0
+								},
+								"description": "KDV %10",
+								"tax_rate": 10
+							},
+							{
+								"tax_type": {
+									"account_name": "% 1'LİK İNDİRİLECEK KDV",
+									"account_number": "191.01.01",
+									"root_type": "Asset",
+									"tax_rate": 1.0
+								},
+								"description": "KDV %1",
+								"not_applicable": 1
+							}
+						]
+					},
+					{
+						"title": "KDV Alış %1",
+						"taxes": [
+							{
+								"tax_type": {
+									"account_name": "% 20'LİK İNDİRİLECEK KDV",
+									"account_number": "191.01.20",
+									"root_type": "Asset",
+									"tax_rate": 20.0
+								},
+								"description": "KDV %20",
+								"not_applicable": 1
+							},
+							{
+								"tax_type": {
+									"account_name": "% 10'LİK İNDİRİLECEK KDV",
+									"account_number": "191.01.10",
+									"root_type": "Asset",
+									"tax_rate": 10.0
+								},
+								"description": "KDV %10",
+								"not_applicable": 1
+							},
+							{
+								"tax_type": {
+									"account_name": "% 1'LİK İNDİRİLECEK KDV",
+									"account_number": "191.01.01",
+									"root_type": "Asset",
+									"tax_rate": 1.0
+								},
+								"description": "KDV %1",
+								"tax_rate": 1
+							}
+						]
+					}
+				]
+			}
 		}
 	},
 

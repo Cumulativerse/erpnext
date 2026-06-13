@@ -1,6 +1,6 @@
 {
     "country_code": "tr",
-    "name": "Turkey - Chart of Accounts",
+    "name": "T\u00fcrkiye - Chart of Accounts",
     "tree": {
         "D\u00d6NEN VARLIKLAR": {
             "account_number": "1",
@@ -11,17 +11,11 @@
                     "account_number": "100",
                     "is_group": 1,
                     "account_type": "Cash",
-                    "TL KASA": {
+                    "account_category": "Cash and Cash Equivalents",
+                    "TRY KASA": {
                         "account_number": "100.01",
-                        "account_type": "Cash"
-                    },
-                    "EUR KASA": {
-                        "account_number": "100.02",
-                        "account_type": "Cash"
-                    },
-                    "USD KASA": {
-                        "account_number": "100.03",
-                        "account_type": "Cash"
+                        "account_type": "Cash",
+                        "account_category": "Cash and Cash Equivalents"
                     }
                 },
                 "ALINAN \u00c7EKLER": {
@@ -69,9 +63,10 @@
                 "account_number": "12",
                 "ALICILAR": {
                     "account_number": "120",
-                    "ALICILAR": {
+                    "TRY ALICILAR": {
                         "account_number": "120.01",
-                        "account_type": "Receivable"
+                        "account_type": "Receivable",
+                        "account_category": "Trade Receivables"
                     }
                 },
                 "ALACAK SENETLER\u0130": {
@@ -154,14 +149,18 @@
                 },
                 "T\u0130CAR\u0130 MALLAR": {
                     "account_number": "153",
-                    "is_group": 1
+                    "account_type": "Stock",
+                    "account_category": "Stock Assets",
+                    "is_group": 1,
+                    "T\u0130CAR\u0130 MALLAR": {
+                        "account_number": "153.01",
+                        "account_type": "Stock",
+                        "account_category": "Stock Assets"
+                    }
                 },
                 "D\u0130\u011eER STOKLAR": {
                     "account_number": "157",
-                    "D\u0130\u011eR. STOK.": {
-                        "account_number": "157.01",
-                        "account_type": "Stock"
-                    }
+                    "is_group": 1
                 },
                 "STOK DE\u011eER D\u00dc\u015e\u00dcKL\u00dc\u011e\u00dc KAR\u015eILI\u011eI(-)": {
                     "account_number": "158",
@@ -212,25 +211,25 @@
                     "account_number": "191",
                     "\u0130ND\u0130R\u0130LECEK KDV": {
                         "account_number": "191.01",
-                        "% 18'L\u0130K \u0130ND\u0130R\u0130LECEK KDV": {
-                            "account_number": "191.01.01",
-                            "account_type": "Tax"
-                        },
-                        "% 8'L\u0130K \u0130ND\u0130R\u0130LECEK KDV": {
-                            "account_number": "191.01.02",
-                            "account_type": "Tax"
-                        },
-                        "% 1'L\u0130K \u0130ND\u0130R\u0130LECEK KDV": {
-                            "account_number": "191.01.03",
-                            "account_type": "Tax"
-                        },
+                        "account_type": "Tax",
+                        "account_category": "Other Current Assets",
                         "% 20'L\u0130K \u0130ND\u0130R\u0130LECEK KDV": {
-                            "account_number": "191.01.04",
-                            "account_type": "Tax"
+                            "account_number": "191.01.20",
+                            "tax_rate": 20,
+                            "account_type": "Tax",
+                            "account_category": "Other Current Assets"
                         },
                         "% 10'L\u0130K \u0130ND\u0130R\u0130LECEK KDV": {
-                            "account_number": "191.01.05",
-                            "account_type": "Tax"
+                            "account_number": "191.01.10",
+                            "tax_rate": 10,
+                            "account_type": "Tax",
+                            "account_category": "Other Current Assets"
+                        },
+                        "% 1'L\u0130K \u0130ND\u0130R\u0130LECEK KDV": {
+                            "account_number": "191.01.01",
+                            "tax_rate": 1,
+                            "account_type": "Tax",
+                            "account_category": "Other Current Assets"
                         }
                     }
                 },
@@ -241,6 +240,14 @@
                 "PE\u015e\u0130N \u00d6DENEN VERG\u0130LER VE FONLAR": {
                     "account_number": "193",
                     "is_group": 1
+                },
+                "GE\u00C7\u0130C\u0130 A\u00C7ILI\u015E HESABI": {
+                    "account_number": "194",
+                    "GE\u00C7\u0130C\u0130 A\u00C7ILI\u015E HESABI": {
+                        "account_number": "194.01",
+                        "account_type": "Temporary",
+                        "account_category": "Other Current Assets"
+                    }
                 },
                 "\u0130\u015e AVANSLARI": {
                     "account_number": "195",
@@ -568,8 +575,15 @@
                 "account_number": "32",
                 "SATICILAR": {
                     "account_number": "320",
-                    "SATICILAR TRY": {
-                        "account_number": "320.01"
+                    "TRY SATICILAR": {
+                        "account_number": "320.01",
+                        "account_type": "Payable",
+                        "account_category": "Trade Payables"
+                    },
+                    "FATURALANMAMI\u015e ALINAN STOK": {
+                        "account_number": "320.99",
+                        "account_type": "Stock Received But Not Billed",
+                        "account_category": "Trade Payables"
                     }
                 },
                 "BOR\u00c7 SENETLER\u0130": {
@@ -693,25 +707,25 @@
                     "account_number": "391",
                     "HESAPL. KDV": {
                         "account_number": "391.01",
-                        "% 18 HESAPLAN KDV": {
-                            "account_number": "391.01.01",
-                            "account_type": "Tax"
-                        },
-                        "% 8 HESAPLANAN KDV": {
-                            "account_number": "391.01.02",
-                            "account_type": "Tax"
-                        },
-                        "% 1 HESAPLANAN KDV": {
-                            "account_number": "391.01.03",
-                            "account_type": "Tax"
-                        },
+                        "account_type": "Tax",
+                        "account_category": "Current Tax Liabilities",
                         "% 20 HESAPLANAN KDV": {
-                            "account_number": "391.01.04",
-                            "account_type": "Tax"
+                            "account_number": "391.01.20",
+                            "tax_rate": 20,
+                            "account_type": "Tax",
+                            "account_category": "Current Tax Liabilities"
                         },
                         "% 10 HESAPLANAN KDV": {
-                            "account_number": "391.01.05",
-                            "account_type": "Tax"
+                            "account_number": "391.01.10",
+                            "tax_rate": 10,
+                            "account_type": "Tax",
+                            "account_category": "Current Tax Liabilities"
+                        },
+                        "% 1 HESAPLANAN KDV": {
+                            "account_number": "391.01.01",
+                            "tax_rate": 1,
+                            "account_type": "Tax",
+                            "account_category": "Current Tax Liabilities"
                         }
                     }
                 },
@@ -967,7 +981,11 @@
                 "account_number": "60",
                 "YURT \u0130\u00c7\u0130 SATI\u015eLAR": {
                     "account_number": "600",
-                    "is_group": 1
+                    "YURT \u0130\u00c7\u0130 SATI\u015eLAR": {
+                        "account_number": "600.01",
+                        "account_type": "Income Account",
+                        "account_category": "Revenue from Operations"
+                    }
                 },
                 "YURT DI\u015eI SATI\u015eLAR": {
                     "account_number": "601",
@@ -1009,9 +1027,7 @@
                 },
                 "D\u0130\u011eER SATI\u015eLARIN MAL\u0130YET\u0130(-)": {
                     "account_number": "623",
-                    "D\u0130\u011eR. SAT\u015e. MALYT.": {
-                        "account_number": "623.01"
-                    }
+                    "is_group": 1
                 }
             },
             "FAAL\u0130YET G\u0130DERLER\u0130(-)": {
@@ -1057,7 +1073,10 @@
                 },
                 "KAMB\u0130YO K\u00c2RLARI": {
                     "account_number": "646",
-                    "is_group": 1
+                    "KAMB\u0130YO K\u00c2RLARI": {
+                        "account_number": "646.01",
+                        "account_category": "Other Operating Income"
+                    }
                 },
                 "REESKONT FA\u0130Z GEL\u0130RLER\u0130": {
                     "account_number": "647",
@@ -1167,6 +1186,20 @@
         "MAL\u0130YET HESAPLARI (7/A SE\u00c7ENE\u011e\u0130)": {
             "account_number": "7",
             "root_type": "Expense",
+            "SATILAN T\u0130CAR\u0130 MALLAR MAL\u0130YET\u0130(-)": {
+                "account_number": "621.01",
+                "account_type": "Cost of Goods Sold",
+                "account_category": "Cost of Goods Sold"
+            },
+            "\u015e\u00dcPHEL\u0130 ALACAK KAR\u015eILIK G\u0130DERLER\u0130": {
+                "account_number": "654.01",
+                "account_category": "Operating Expenses"
+            },
+            "YUVARLAMA FARKLARI": {
+                "account_number": "689.99",
+                "account_type": "Round Off",
+                "account_category": "Operating Expenses"
+            },
             "MAL\u0130YET MUHASEBES\u0130 BA\u011eLANTI HESAPLARI": {
                 "account_number": "70",
                 "MAL\u0130YET MUHASEBES\u0130 BA\u011eLANTI HESABI": {
