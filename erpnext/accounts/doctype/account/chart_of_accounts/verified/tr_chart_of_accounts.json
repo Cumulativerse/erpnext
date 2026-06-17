@@ -24,9 +24,13 @@
                 },
                 "BANKALAR": {
                     "account_number": "102",
-                    "is_group": 1,
                     "account_category": "Cash and Cash Equivalents",
-                    "account_type": "Bank"
+                    "account_type": "Bank",
+                    "VARSAYILAN BANKA TRY HESABI": {
+                        "account_number": "102.01",
+                        "account_category": "Cash and Cash Equivalents",
+                        "account_type": "Bank"
+                    }
                 },
                 "VER\u0130LEN \u00c7EKLER VE \u00d6DEME EM\u0130RLER\u0130(-)": {
                     "account_number": "103",
@@ -119,11 +123,7 @@
                 },
                 "D\u0130\u011eER \u00c7E\u015e\u0130TL\u0130 ALACAKLAR": {
                     "account_number": "136",
-                    "PERSONEL AVANSLARI": {
-                        "account_number": "136.01",
-                        "account_category": "Other Receivables",
-                        "account_type": "Receivable"
-                    }
+                    "is_group": 1
                 },
                 "D\u0130\u011eER ALACAK SENETLER\u0130 REESKONTU(-)": {
                     "account_number": "137",
