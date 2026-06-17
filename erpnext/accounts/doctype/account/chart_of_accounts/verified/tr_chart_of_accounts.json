@@ -119,7 +119,11 @@
                 },
                 "D\u0130\u011eER \u00c7E\u015e\u0130TL\u0130 ALACAKLAR": {
                     "account_number": "136",
-                    "is_group": 1
+                    "PERSONEL AVANSLARI": {
+                        "account_number": "136.01",
+                        "account_category": "Other Receivables",
+                        "account_type": "Receivable"
+                    }
                 },
                 "D\u0130\u011eER ALACAK SENETLER\u0130 REESKONTU(-)": {
                     "account_number": "137",
@@ -337,11 +341,7 @@
                 "account_number": "24",
                 "BA\u011eLI MENKUL KIYMETLER": {
                     "account_number": "240",
-                    "BA\u011eL. MEKL. KIYM.": {
-                        "account_number": "240.01",
-                        "account_category": "Tangible Assets",
-                        "account_type": "Fixed Asset"
-                    }
+                    "is_group": 1
                 },
                 "BA\u011eLI MENKUL KIYMETLER DE\u011eER D\u00dc\u015e\u00dcKL\u00dc\u011e\u00dc KAR\u015eILI\u011eI(-)": {
                     "account_number": "241",
@@ -412,11 +412,19 @@
                 },
                 "B\u0130R\u0130KM\u0130\u015e AMORT\u0130SMANLAR(-)": {
                     "account_number": "257",
-                    "is_group": 1
+                    "B\u0130R\u0130KM\u0130\u015e AMORT\u0130SMANLAR(-)": {
+                        "account_number": "257.01",
+                        "account_category": "Tangible Assets",
+                        "account_type": "Accumulated Depreciation"
+                    }
                 },
                 "YAPILMAKTA OLAN YATIRIMLAR": {
                     "account_number": "258",
-                    "is_group": 1
+                    "YAPILMAKTA OLAN YATIRIMLAR": {
+                        "account_number": "258.01",
+                        "account_category": "Tangible Assets",
+                        "account_type": "Capital Work in Progress"
+                    }
                 },
                 "VER\u0130LEN AVANSLAR": {
                     "account_number": "259",
@@ -443,11 +451,7 @@
                 },
                 "\u00d6ZEL MAL\u0130YETLER": {
                     "account_number": "264",
-                    "\u00d6ZL. MAL\u0130YT.": {
-                        "account_number": "264.01",
-                        "account_category": "Operating Expenses",
-                        "account_type": "Depreciation"
-                    }
+                    "is_group": 1
                 },
                 "D\u0130\u011eER MADD\u0130 OLMAYAN DURAN VARLIKLAR": {
                     "account_number": "267",
@@ -583,6 +587,11 @@
                         "account_category": "Trade Payables",
                         "account_type": "Payable"
                     },
+                    "FATURALANMAMI\u015e ALINAN VARLIK": {
+                        "account_number": "320.98",
+                        "account_category": "Trade Payables",
+                        "account_type": "Asset Received But Not Billed"
+                    },
                     "FATURALANMAMI\u015e ALINAN STOK": {
                         "account_number": "320.99",
                         "account_category": "Trade Payables",
@@ -622,7 +631,10 @@
                 },
                 "PERSONELE BOR\u00c7LAR": {
                     "account_number": "335",
-                    "is_group": 1
+                    "PERSONELE BOR\u00c7LAR": {
+                        "account_number": "335.01",
+                        "account_category": "Other Payables"
+                    }
                 },
                 "D\u0130\u011eER \u00c7E\u015e\u0130TL\u0130 BOR\u00c7LAR": {
                     "account_number": "336",
@@ -1076,10 +1088,7 @@
                 },
                 "KAMB\u0130YO K\u00c2RLARI": {
                     "account_number": "646",
-                    "KAMB\u0130YO K\u00c2RLARI": {
-                        "account_number": "646.01",
-                        "account_category": "Other Operating Income"
-                    }
+                    "is_group": 1
                 },
                 "REESKONT FA\u0130Z GEL\u0130RLER\u0130": {
                     "account_number": "647",
@@ -1144,7 +1153,10 @@
                 },
                 "D\u0130\u011eER OLA\u011eAN DI\u015eI GEL\u0130R VE K\u00c2RLAR": {
                     "account_number": "679",
-                    "is_group": 1
+                    "SAB\u0130T KIYMET ELDEN \u00c7IKARMA K\u00c2R/ZARARI": {
+                        "account_number": "679.01",
+                        "account_category": "Other Operating Income"
+                    }
                 }
             },
             "OLA\u011eAN DI\u015eI G\u0130DER VE ZARARLAR(-)": {
@@ -1194,11 +1206,15 @@
                 "account_category": "Cost of Goods Sold",
                 "account_type": "Cost of Goods Sold"
             },
-            "\u015e\u00dcPHEL\u0130 ALACAK KAR\u015eILIK G\u0130DERLER\u0130": {
+            "KAMB\u0130YO ZARARLARI(-)": {
+                "account_number": "656.01",
+                "account_category": "Operating Expenses"
+            },
+            "\u015e\u00dcPHEL\u0130 ALACAK KAR\u015eILIK G\u0130DERLER\u0130(-)": {
                 "account_number": "654.01",
                 "account_category": "Operating Expenses"
             },
-            "YUVARLAMA FARKLARI": {
+            "YUVARLAMA FARKLARI(-)": {
                 "account_number": "689.99",
                 "account_category": "Operating Expenses",
                 "account_type": "Round Off"
@@ -1324,7 +1340,11 @@
                 "account_number": "77",
                 "GENEL Y\u00d6NET\u0130M G\u0130DERLER\u0130": {
                     "account_number": "770",
-                    "is_group": 1
+                    "AMORT\u0130SMAN G\u0130DERLER\u0130": {
+                        "account_number": "770.01",
+                        "account_category": "Operating Expenses",
+                        "account_type": "Depreciation"
+                    }
                 },
                 "GENEL Y\u00d6NET\u0130M G\u0130DERLER\u0130 YANSITMA HESABI": {
                     "account_number": "771",
